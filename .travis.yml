@@ -135,6 +135,7 @@ jobs:
   - name: code_style
   - name: documentation
   - name: check_submodules
+  - name: check_integrated_tests
   - name: check_pr_is_assigned
   include:
   - stage: check_pr_is_not_a_draft
@@ -154,6 +155,9 @@ jobs:
     - DOCKER_REPOSITORY=geosx/ubuntu20.04-gcc9
     - CMAKE_BUILD_TYPE=Release
     - BUILD_AND_TEST_ARGS=--test-documentation
+  - stage: checks
+    name: check_integrated_tests
+    script: scripts/integrated_tests_status.sh
   - stage: checks
     name: check_submodules
     script: scripts/test_submodule_updated.sh
