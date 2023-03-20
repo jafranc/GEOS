@@ -11,4 +11,4 @@ RUN apt-get install -y \
     gdb \
 # for paraview headless
     libcurl4 \
-    libglapi-mesr
+    libglapi-mesa
