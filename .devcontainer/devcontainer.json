@@ -12,7 +12,8 @@
                 "GitHub.vscode-pull-request-github",
                 "eamodio.gitlens",
                 "fredericbonnet.cmake-test-adapter",
-                "redhat.vscode-xml"
+                "redhat.vscode-xml",
+                "ghcr.io/guiyomh/features/vim:0"
             ]
         }
     },
